@@ -1,0 +1,11 @@
+spring:
+ application:
+  name: BootSecurityProj4_rest_app_InMemory_user_details_manager
+# security:
+#  user:
+#   name: siva
+#   password: krishn   # we can use this one for authorization
+server:
+ port: 4133
+ servlet:
+  context-path: /rest_using_security

@@ -1,0 +1,14 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<h1 style="color:green;text-align:center;">Registration Page</h1>
+<form th:action="@{/user/register}" th:object="${info}" method="POST">
+<table align="center">
+<tr><td>Username::</td><td><input type="text" th:field="*{uname}"/></td></tr>
+<tr><td>Password::</td><td><input type="password" th:field="*{pword}"/></td></tr>
+<tr><td>Email::</td><td><input type="email" th:field="*{email}"/></td></tr>
+<tr><td>Roles::</td><td><input type="checkbox" value="customer" th:field="*{roles}" checked>customer
+                        <input type="checkbox" value="manager" th:field="*{roles}">manager
+</td></tr>
+<tr><td><input type="submit" value="register"></td><td><input type="reset" value="cancel"></td></tr>
+</table>
+</form>
+</html>

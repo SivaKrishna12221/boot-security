@@ -1,0 +1,11 @@
+spring:
+ mvc:
+  view:
+   prefix: /WEB-INF/pages/
+   suffix: .jsp
+
+server:
+ port: 4121
+ servlet:
+  context-path: /spring_boot_security
+ 

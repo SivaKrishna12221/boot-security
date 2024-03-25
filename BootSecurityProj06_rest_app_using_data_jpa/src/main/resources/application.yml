@@ -1,0 +1,16 @@
+spring:
+ application:
+  name: Security_using_data_jpa
+ datasource:
+  driver-class-name: oracle.jdbc.driver.OracleDriver
+  url: jdbc:oracle:thin:@localhost:1521:orcl
+  username: system
+  password: siva
+ jpa: 
+  database-platform: org.hibernate.dialect.OracleDialect
+  show-sql: true
+  hibernate:
+   ddl-auto: update
+   
+server:
+ port: 5656
